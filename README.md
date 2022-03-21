@@ -16,14 +16,15 @@ The goal is to create some kind of "Space Invaders" game.
 
 ## Instalation
 
-Install needed modules with `pip`.
+1. Install python
+2. Install needed modules with `pip`.
 
 ```sh
 python -m pip install rich
 python -m pip install pygame
 ```
 
-Run main.py
+3. Run main.py
 
 ```sh
 python main.py
