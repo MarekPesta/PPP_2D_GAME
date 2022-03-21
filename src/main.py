@@ -1,5 +1,10 @@
 from config import *
-from classes import *
+
+from asteroids import *
+from boosters import *
+from general_cls import *
+from shots import *
+from spaceship import *
 
 # Init baisc objest and variables
 pygame.init()
@@ -9,18 +14,25 @@ asteroid_list = []
 asteroid_gen_delay = ASTEROID_INIT_DELAY
 asteroid_gen_time = 0
 asteroid_gen_cnt = 0
+booster_gen_delay = BOOSTER_MIN_DELAY
+booster_gen_time = 0
 stage = 1
 score = 0
 
 info_font = pygame.font.SysFont('didot.ttc', 30)
 end_font = pygame.font.SysFont('didot.ttc', 150)
 
-mixer.init()
-mixer.music.load(os.path.join('music', 'main_music.mp3'))
-shot_sound = pygame.mixer.Sound(os.path.join('music', 'shot.wav'))
-mixer.music.play(-1)
+music = Music(vol=0.001)
+music.play()
 
 spaceShip = SpaceShip()
+boosterFabric = BoosterFabric()
+
+
+start_x = random.randint(BOOSTER_LEFT_BORDER, BOOSTER_RIGHT_BORDER)
+start_y = -BOOSTER_HIGHT
+booster = boosterFabric.generate(start_x, start_y)
+
 
 start = time.time()
 run = True
@@ -39,8 +51,8 @@ while run:
 
         if event.type == pygame.MOUSEBUTTONDOWN:
             if spaceShip.exist is True:
-                shots_list.append(spaceShip.shot())
-                pygame.mixer.Sound.play(shot_sound)
+                for tmp_shot in spaceShip.shot():
+                    shots_list.append(tmp_shot)
 
         if spaceShip.exist is False:
             if event.type == pygame.KEYDOWN:
@@ -53,11 +65,20 @@ while run:
                     asteroid_gen_cnt = 0
                     stage = 1
                     score = 0
-                    ASTEROID_MAX_GEN_AMOUNT = 5
+                    ASTEROID_MAX_GEN_AMOUNT = ASTEROID_MAX_GEN_AMOUNT_INIT
                     start = time.time()
 
         if event.type == QUIT:
             run = False
+
+    # Booster objects generation
+    if ((time.time() - booster_gen_time) > booster_gen_delay):
+        booster_gen_time = time.time()
+        booster_gen_delay = random.randint(BOOSTER_MIN_DELAY, BOOSTER_MAX_DELAY)
+
+        start_x = random.randint(BOOSTER_LEFT_BORDER, BOOSTER_RIGHT_BORDER)
+        start_y = -BOOSTER_HIGHT
+        booster = boosterFabric.generate(start_x, start_y)
 
     # Asteroid objects generation
     if (asteroid_gen_cnt >= ASTEROID_AMOUNT_PER_TIER):
@@ -102,11 +123,21 @@ while run:
     for shot in shots_list:
         if shot.exist is False:
             shots_list.remove(shot)
-        elif (shot.position.y < -PLAZMA_SHOT_HIGHT):
+        elif (shot.position.y < -shot.hight):
             shots_list.remove(shot)
         else:
             WIN.blit(shot.skin, shot.position.get())
-            shot.position.y = shot.position.y-SHOT_SPEED
+            shot.position.y = shot.position.y-shot.speed.y
+            shot.position.x = shot.position.x-shot.speed.x
+
+    #Drawing booster
+    spaceShip.check_boost(booster)
+
+    if (booster.position.y > WIN_HIGHT + BOOSTER_HIGHT):
+        booster.exist = False
+    elif booster.exist is True:
+        booster.position.y = booster.position.y + booster.speed
+        WIN.blit(booster.skin, booster.position.get())
 
     #Drawing spaceship
     if spaceShip.exist is True:
