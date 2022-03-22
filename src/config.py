@@ -7,6 +7,7 @@ from math import acos, sqrt, pi
 import pygame
 from pygame.locals import *
 from pygame import mixer
+import pygame_gui
 
 from rich import print
 from rich.traceback import install
@@ -29,7 +30,32 @@ pygame.display.set_caption(f'PySpace Invaders 2D')
 
 BACKGROUND = pygame.image.load(os.path.join('images', 'background.jpg'))
 
-pygame.mouse.set_visible(False)
+# Menu buttons
+BUTTON_WDITH = 125
+BUTTON_HIGHT = 50
+BUTTON_OFFSET = 50
+
+pygame.init()
+
+manager = pygame_gui.UIManager((WIN_WIDTH, WIN_HIGHT))
+
+start_button = pygame_gui.elements.UIButton(relative_rect=pygame.Rect((WIN_WIDTH/2-1.5*BUTTON_WDITH/2, WIN_HIGHT/2-3*BUTTON_HIGHT), (1.5*BUTTON_WDITH, 1.5*BUTTON_HIGHT)), text='START', manager=manager)
+
+easy_button = pygame_gui.elements.UIButton(relative_rect=pygame.Rect((WIN_WIDTH/2-BUTTON_WDITH/2, WIN_HIGHT/2-1*BUTTON_HIGHT+BUTTON_OFFSET), (BUTTON_WDITH, BUTTON_HIGHT)), text='EASY', manager=manager)
+medium_button = pygame_gui.elements.UIButton(relative_rect=pygame.Rect((WIN_WIDTH/2-BUTTON_WDITH/2, WIN_HIGHT/2-0+BUTTON_OFFSET), (BUTTON_WDITH, BUTTON_HIGHT)), text='MEDIUM', manager=manager)
+hard_button = pygame_gui.elements.UIButton(relative_rect=pygame.Rect((WIN_WIDTH/2-BUTTON_WDITH/2, WIN_HIGHT/2+1*BUTTON_HIGHT+BUTTON_OFFSET), (BUTTON_WDITH, BUTTON_HIGHT)), text='HARD', manager=manager)
+impossible_button = pygame_gui.elements.UIButton(relative_rect=pygame.Rect((WIN_WIDTH/2-BUTTON_WDITH/2, WIN_HIGHT/2+2*BUTTON_HIGHT+BUTTON_OFFSET), (BUTTON_WDITH, BUTTON_HIGHT)), text='IMPOSSIBLE', manager=manager)
+
+# Game state
+state = 'menu'
+
+# Game level
+game_lvl = 'EASY'
+
+game_lvl_settings = {'EASY': 7,
+                     'MEDIUM': 20,
+                     'HARD': 50,
+                     'IMPOSSIBLE': 75}
 
 # Main character - stpaceship
 SPACESHIP_WIDTH = 1982
@@ -79,8 +105,7 @@ ASTEROID_MIN_SCALE = 15
 ASTEROID_MAX_SCALE = 100
 ASTEROID_IMG = pygame.image.load(os.path.join('images', 'asteroid.png'))
 ASTEROID_MAX_SPEED = 10
-ASTEROID_MAX_GEN_AMOUNT_INIT = 7#5
-ASTEROID_MAX_GEN_AMOUNT = ASTEROID_MAX_GEN_AMOUNT_INIT
+ASTEROID_MAX_GEN_AMOUNT = game_lvl_settings[game_lvl]
 ASTEROID_INIT_DELAY = 5  #s
 ASTEROID_MIN_DELAY = 0.5  #s
 ASTEROID_AMOUNT_PER_TIER = 10
