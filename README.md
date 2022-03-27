@@ -40,7 +40,7 @@ This section describes main features of the game.
 
 Screen shot of the mian game menu is shown below.
 
-![alt text](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003556)
+![menu](https://user-images.githubusercontent.com/54101971/160297483-e5dc37f9-b972-4a72-8688-81b4fa7a179d.PNG)
 
 Player is able to set one of four levels of difficulty: easy, menium, hard and impossible.
 
@@ -57,22 +57,22 @@ To change type of weapon or upgrade it player have to collect "universal" gun bo
 #### Gun Levels
 
 * Level 1
-![gif](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003368)
+![gun_lvl1](https://user-images.githubusercontent.com/54101971/160297438-f62ecee8-460d-414a-966e-db8c3f058e6e.gif)
 
 * Level 2
-![gif](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003389)
+![gun_lvl2](https://user-images.githubusercontent.com/54101971/160297443-bf95ff57-eb8d-4687-8747-6a8144a7b22c.gif)
 
 * Level 3
-![gif](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003408)
+![gun_lvl3](https://user-images.githubusercontent.com/54101971/160297448-60f3cd96-5ed4-424b-a0da-02f16efafb02.gif)
 
 * Level 4
-![gif](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003432)
+![gun_lvl4](https://user-images.githubusercontent.com/54101971/160297449-2964dfb0-5e45-42ff-83a6-d1b6e2a50bd4.gif)
 
 * Level 5
-![gif](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003471)
+![gun_lvl5](https://user-images.githubusercontent.com/54101971/160297452-b8babace-b40a-4da7-b882-940e0eca8e4f.gif)
 
 * Level 6
-![gif](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003495)
+![gun_lvl6](https://user-images.githubusercontent.com/54101971/160297458-08d7a5f5-7fa0-440e-aaad-56194615cf45.gif)
 
 #### Gun Types
 
@@ -81,14 +81,14 @@ To change type of weapon or upgrade it player have to collect "universal" gun bo
 Red gun is a default type of gun.
 It is characterized by the fact that one shot can destory only one asteroid.
 
-![gif](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003495)
+![gun_lvl6](https://user-images.githubusercontent.com/54101971/160297458-08d7a5f5-7fa0-440e-aaad-56194615cf45.gif))
 
 * Green gun
 
 Green gun is a piercing gun.
 It is characterized by the fact that one shot can destory many asteroids which are in the line of the shot.
 
-![gif](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003536)
+![gun_green](https://user-images.githubusercontent.com/54101971/160297473-5298696a-2b1c-4f5f-bc5b-91222a851373.gif)
 
 * Blue gun
 
@@ -97,7 +97,7 @@ It is characterized by the fact that one shot can bounce off the shot asteroid i
 It can go straight or change its direction by +/-45 degrees.
 It can destory (and bounce off) up to three asteroids.
 
-![gif](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003516)
+![gun_blue](https://user-images.githubusercontent.com/54101971/160297464-0c689132-9554-41d8-86c0-07c93db5358f.gif)
 
 #### Gun Boosters
 
@@ -106,25 +106,25 @@ It can destory (and bounce off) up to three asteroids.
 Red booster changes spaceship weapon to red gun or if red gun is already used, it increases a level of the gun.
 Red booster is shown below.
 
-![alt text](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080004871)
+![red_booster](https://user-images.githubusercontent.com/54101971/160297765-e4690389-aa14-4b47-a03a-6d80568ba9a9.png)
 
 * Green booster
 
 Green booster changes spaceship weapon to green gun or if green gun is already used, it increases a level of the gun.
 Green booster is shown below.
 
-![alt text](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080004897)
+![green_booster](https://user-images.githubusercontent.com/54101971/160297771-391cfe71-3db0-4ed7-86ed-5e3df031122d.png)
 
 * Blue booster
 
 Blue booster changes spaceship weapon to blue gun or if blue gun is already used, it increases a level of the gun.
 Blue booster is shown below.
 
-![alt text](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080004919)
+![blue_booster](https://user-images.githubusercontent.com/54101971/160297778-8b332c31-7abd-4d20-aeec-2a4ab56d3748.png)
 
 * Universal booster
 
 Universal booster increases a level of the gun, regardless the gun type.
 Universal booster is shown below.
 
-![alt text](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080004841)
+![gun_booster](https://user-images.githubusercontent.com/54101971/160297756-351d7fd9-2acb-4ae7-b7e2-ab5f4aeac08d.png)
