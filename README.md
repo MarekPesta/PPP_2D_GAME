@@ -57,21 +57,27 @@ To change type of weapon or upgrade it player have to collect "universal" gun bo
 #### Gun Levels
 
 * Level 1
+
 ![gun_lvl1](https://user-images.githubusercontent.com/54101971/160297438-f62ecee8-460d-414a-966e-db8c3f058e6e.gif)
 
 * Level 2
+
 ![gun_lvl2](https://user-images.githubusercontent.com/54101971/160297443-bf95ff57-eb8d-4687-8747-6a8144a7b22c.gif)
 
 * Level 3
+
 ![gun_lvl3](https://user-images.githubusercontent.com/54101971/160297448-60f3cd96-5ed4-424b-a0da-02f16efafb02.gif)
 
 * Level 4
+
 ![gun_lvl4](https://user-images.githubusercontent.com/54101971/160297449-2964dfb0-5e45-42ff-83a6-d1b6e2a50bd4.gif)
 
 * Level 5
+
 ![gun_lvl5](https://user-images.githubusercontent.com/54101971/160297452-b8babace-b40a-4da7-b882-940e0eca8e4f.gif)
 
 * Level 6
+
 ![gun_lvl6](https://user-images.githubusercontent.com/54101971/160297458-08d7a5f5-7fa0-440e-aaad-56194615cf45.gif)
 
 #### Gun Types
@@ -106,7 +112,7 @@ It can destory (and bounce off) up to three asteroids.
 Red booster changes spaceship weapon to red gun or if red gun is already used, it increases a level of the gun.
 Red booster is shown below.
 
-![red_booster](https://user-images.githubusercontent.com/54101971/160297765-e4690389-aa14-4b47-a03a-6d80568ba9a9.png)
+![red_booster](https://user-images.githubusercontent.com/54101971/160297765-e4690389-aa14-4b47-a03a-6d80568ba9a9.png=250x250)
 
 * Green booster
 
