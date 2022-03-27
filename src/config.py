@@ -9,6 +9,8 @@ from pygame.locals import *
 from pygame import mixer
 import pygame_gui
 
+pygame.init()
+
 from rich import print
 from rich.traceback import install
 install(show_locals=False)
@@ -30,12 +32,13 @@ pygame.display.set_caption(f'PySpace Invaders 2D')
 
 BACKGROUND = pygame.image.load(os.path.join('images', 'background.jpg'))
 
-# Menu buttons
+# Menu
 BUTTON_WDITH = 125
 BUTTON_HIGHT = 50
 BUTTON_OFFSET = 50
 
-pygame.init()
+info_font = pygame.font.SysFont('didot.ttc', 30)
+end_font = pygame.font.SysFont('didot.ttc', 150)
 
 manager = pygame_gui.UIManager((WIN_WIDTH, WIN_HIGHT))
 

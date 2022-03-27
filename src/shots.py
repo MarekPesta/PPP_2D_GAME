@@ -9,6 +9,7 @@ class Gun_Cfg:
 
     style: str
     lvl: int
+    position: Position(0, 0)
 
 
 class PlazmaShot():
@@ -125,7 +126,7 @@ class BluePlazmaShot(PlazmaShot):
 class PlazmaShotFactory(PlazmaShot):
 
     def create_single_shot(self, gun: Gun_Cfg) -> PlazmaShot:
-        pos_x, pos_y = pygame.mouse.get_pos()
+        pos_x, pos_y = gun.position.get()
         match gun.style:
             case 'red': shot = RedPlazmaShot(pos_x, pos_y)
             case 'green': shot = GreenPlazmaShot(pos_x, pos_y)

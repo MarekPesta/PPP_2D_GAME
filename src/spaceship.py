@@ -14,7 +14,7 @@ class SpaceShip():
         self.exist = True
         self.stage = 0
         self.score = 0
-        self.gun = Gun_Cfg(style='red', lvl=1)
+        self.gun = Gun_Cfg(style='red', lvl=1, position=Position(self.position.x+SPACESHIP_CENTER_OFFSET_X, self.position.y+SPACESHIP_CENTER_OFFSET_Y))
         self.gun_f = PlazmaShotFactory()
         self.armory = {'red': 1,
                        'green': 1,
@@ -22,6 +22,8 @@ class SpaceShip():
 
     def shot(self) -> PlazmaShot:
         if self.exist is True:
+            self.gun.position.x = self.position.x+SPACESHIP_CENTER_OFFSET_X
+            self.gun.position.y = self.position.y+SPACESHIP_CENTER_OFFSET_Y
             shot_list = self.gun_f.create_shot(self.gun)
             return shot_list
 

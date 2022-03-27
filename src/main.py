@@ -6,9 +6,7 @@ from general_cls import *
 from shots import *
 from spaceship import *
 
-# Init baisc objest and variables
-#pygame.init()
-
+# Init basic objects and variables
 shots_list = []
 asteroid_list = []
 asteroid_gen_delay = ASTEROID_INIT_DELAY
@@ -18,9 +16,6 @@ booster_gen_delay = BOOSTER_MIN_DELAY
 booster_gen_time = 0
 stage = 1
 score = 0
-
-info_font = pygame.font.SysFont('didot.ttc', 30)
-end_font = pygame.font.SysFont('didot.ttc', 150)
 
 music = Music(vol=0.5)
 music.play()
@@ -60,11 +55,15 @@ while run:
                     for tmp_shot in spaceShip.shot():
                         shots_list.append(tmp_shot)
 
-            if spaceShip.exist is False:
-                if event.type == pygame.KEYDOWN:
+            if event.type == pygame.KEYDOWN:
+                if spaceShip.exist is False:
                     if event.key == pygame.K_RETURN:
                         state = 'menu'
                         time_delta = clock.tick(60)/1000.0
+                if spaceShip.exist is True:
+                    if event.key == pygame.K_SPACE:
+                        for tmp_shot in spaceShip.shot():
+                            shots_list.append(tmp_shot)
 
         if event.type == QUIT:
             run = False
@@ -84,10 +83,6 @@ while run:
                     ASTEROID_MAX_GEN_AMOUNT = game_lvl_settings[game_lvl]
                     start = time.time()
                     booster_gen_time = 0
-                    # spaceShip.gun = Gun_Cfg(style='red', lvl=1)
-                    # spaceShip.armory = {'red': 1,
-                    #                     'green': 1,
-                    #                     'blue': 1}
                     spaceShip = SpaceShip()
 
                 if event.ui_element == easy_button:
