@@ -40,7 +40,7 @@ This section describes main features of the game.
 
 Screen shot of the mian game menu is shown below.
 
-![menu](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003556)
+![alt text](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003556)
 
 Player is able to set one of four levels of difficulty: easy, menium, hard and impossible.
 
@@ -57,22 +57,22 @@ To change type of weapon or upgrade it player have to collect "universal" gun bo
 #### Gun Levels
 
 * Level 1
-![gun_lvl1](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003368)
+![gif](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003368)
 
 * Level 2
-![gun_lvl2](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003389)
+![gif](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003389)
 
 * Level 3
-![gun_lvl3](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003408)
+![gif](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003408)
 
 * Level 4
-![gun_lvl4](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003432)
+![gif](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003432)
 
 * Level 5
-![gun_lvl5](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003471)
+![gif](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003471)
 
 * Level 6
-![gun_lvl6](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003495)
+![gif](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003495)
 
 #### Gun Types
 
@@ -81,14 +81,14 @@ To change type of weapon or upgrade it player have to collect "universal" gun bo
 Red gun is a default type of gun.
 It is characterized by the fact that one shot can destory only one asteroid.
 
-![gun_lvl6](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003495)
+![gif](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003495)
 
 * Green gun
 
 Green gun is a piercing gun.
 It is characterized by the fact that one shot can destory many asteroids which are in the line of the shot.
 
-![gun_green](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003536)
+![gif](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003536)
 
 * Blue gun
 
@@ -97,7 +97,7 @@ It is characterized by the fact that one shot can bounce off the shot asteroid i
 It can go straight or change its direction by +/-45 degrees.
 It can destory (and bounce off) up to three asteroids.
 
-![gun_blue](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003516)
+![gif](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080003516)
 
 #### Gun Boosters
 
@@ -106,25 +106,25 @@ It can destory (and bounce off) up to three asteroids.
 Red booster changes spaceship weapon to red gun or if red gun is already used, it increases a level of the gun.
 Red booster is shown below.
 
-![red_booster](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080004871)
+![alt text](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080004871)
 
 * Green booster
 
 Green booster changes spaceship weapon to green gun or if green gun is already used, it increases a level of the gun.
 Green booster is shown below.
 
-![green_booster](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080004897)
+![alt text](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080004897)
 
 * Blue booster
 
 Blue booster changes spaceship weapon to blue gun or if blue gun is already used, it increases a level of the gun.
 Blue booster is shown below.
 
-![blue_booster](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080004919)
+![alt text](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080004919)
 
 * Universal booster
 
 Universal booster increases a level of the gun, regardless the gun type.
 Universal booster is shown below.
 
-![gun_booster](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080004841)
+![alt text](https://github.com/MarekPesta/PPP_2D_GAME/issues/1#issuecomment-1080004841)
