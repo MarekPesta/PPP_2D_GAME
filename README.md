@@ -105,6 +105,8 @@ It can destory (and bounce off) up to three asteroids.
 
 ![gun_blue](https://user-images.githubusercontent.com/54101971/160297464-0c689132-9554-41d8-86c0-07c93db5358f.gif)
 
+<img src="https://user-images.githubusercontent.com/54101971/160297464-0c689132-9554-41d8-86c0-07c93db5358f.gif" width="50" height="50">
+
 #### Gun Boosters
 
 * Red booster
@@ -112,25 +114,25 @@ It can destory (and bounce off) up to three asteroids.
 Red booster changes spaceship weapon to red gun or if red gun is already used, it increases a level of the gun.
 Red booster is shown below.
 
-![red_booster](https://user-images.githubusercontent.com/54101971/160297765-e4690389-aa14-4b47-a03a-6d80568ba9a9.png=250x250)
+<img src="https://user-images.githubusercontent.com/54101971/160297765-e4690389-aa14-4b47-a03a-6d80568ba9a9.png" width="50" height="50">
 
 * Green booster
 
 Green booster changes spaceship weapon to green gun or if green gun is already used, it increases a level of the gun.
 Green booster is shown below.
 
-![green_booster](https://user-images.githubusercontent.com/54101971/160297771-391cfe71-3db0-4ed7-86ed-5e3df031122d.png)
+<img src="https://user-images.githubusercontent.com/54101971/160297771-391cfe71-3db0-4ed7-86ed-5e3df031122d.png" width="50" height="50">
 
 * Blue booster
 
 Blue booster changes spaceship weapon to blue gun or if blue gun is already used, it increases a level of the gun.
 Blue booster is shown below.
 
-![blue_booster](https://user-images.githubusercontent.com/54101971/160297778-8b332c31-7abd-4d20-aeec-2a4ab56d3748.png)
+<img src="https://user-images.githubusercontent.com/54101971/160297778-8b332c31-7abd-4d20-aeec-2a4ab56d3748.png" width="50" height="50">
 
 * Universal booster
 
 Universal booster increases a level of the gun, regardless the gun type.
 Universal booster is shown below.
 
-<img src="https://user-images.githubusercontent.com/54101971/160297756-351d7fd9-2acb-4ae7-b7e2-ab5f4aeac08d.png" width="300" height="300">
+<img src="https://user-images.githubusercontent.com/54101971/160297756-351d7fd9-2acb-4ae7-b7e2-ab5f4aeac08d.png" width="50" height="50">
