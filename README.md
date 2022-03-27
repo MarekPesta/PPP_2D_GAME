@@ -105,8 +105,6 @@ It can destory (and bounce off) up to three asteroids.
 
 ![gun_blue](https://user-images.githubusercontent.com/54101971/160297464-0c689132-9554-41d8-86c0-07c93db5358f.gif)
 
-<img src="https://user-images.githubusercontent.com/54101971/160297464-0c689132-9554-41d8-86c0-07c93db5358f.gif" width="50" height="50">
-
 #### Gun Boosters
 
 * Red booster
