@@ -42,7 +42,7 @@ Screen shot of the mian game menu is shown below.
 
 ![menu](https://user-images.githubusercontent.com/54101971/160297483-e5dc37f9-b972-4a72-8688-81b4fa7a179d.PNG)
 
-Player is able to set one of four levels of difficulty: easy, menium, hard and impossible.
+Player is able to set one of four levels of difficulty: easy, medium, hard and impossible.
 
 ### Game Objective
 
