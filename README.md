@@ -54,6 +54,8 @@ There is no limit in game stages or points.
 There are three types of guns and six gun levels.
 To change type of weapon or upgrade it player have to collect "universal" gun booster or a gun booster which type is consistent with type of gun which is currently used.
 
+Player can shoot using mouse buttons or with spacekey.
+
 #### Gun Levels
 
 * Level 1
