@@ -133,4 +133,4 @@ Blue booster is shown below.
 Universal booster increases a level of the gun, regardless the gun type.
 Universal booster is shown below.
 
-![gun_booster](https://user-images.githubusercontent.com/54101971/160297756-351d7fd9-2acb-4ae7-b7e2-ab5f4aeac08d.png)
+<img src="https://user-images.githubusercontent.com/54101971/160297756-351d7fd9-2acb-4ae7-b7e2-ab5f4aeac08d.png" width="300" height="300">
